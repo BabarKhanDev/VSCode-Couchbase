@@ -1,0 +1,47 @@
+{
+    "Upsert Document": {
+        "prefix": ["@cbups"],
+        "body": [],
+        "description": "Upsert a document to a collection."
+    },
+    "Insert Document": {
+        "prefix": ["@cbins"],
+        "body": [],
+        "description": "Insert a document into a collection."
+    },
+    "Replace Document": {
+        "prefix": ["@cbrep"],
+        "body": [],
+        "description": "Replace a document in a collection."
+    },
+    "Get Document": {
+        "prefix": ["@cbget"],
+        "body": [],
+        "description": "Use a key to get a document from a collection."
+    },
+    "Remove Document": {
+        "prefix": ["@cbrem"],
+        "body": [],
+        "description": "Use a key to remove a document from a collection."
+    },
+    "KV Import": {
+        "prefix": ["@cbkvimp"],
+        "body": [],
+        "description": "Import all necessary KV namespace."
+    },
+    "KV Example": {
+        "prefix": ["@cbkvex"],
+        "body": [],
+        "description": "Example code that shows: inserting, upserting, getting, replacing, and removing a document. Along with all required imports."
+    },
+    "JSON Transcoder": {
+        "prefix": ["@cbtranscoder"],
+        "body": [],
+        "description": "Example code that shows how to use a RawJSONTranscoder on an upsert operation."
+    },
+    "Document Expiration": {
+        "prefix": ["@cbsetexp"],
+        "body": [],
+        "description": "Use Document Expiration"
+    }
+}
