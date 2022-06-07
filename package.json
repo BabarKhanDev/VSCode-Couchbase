@@ -41,7 +41,7 @@
       {
           "id": "spring-data",
           "aliases": [
-              "Spring Boot Properties Yaml"
+              "Spring Data Properties"
           ],
           "filenamePatterns": [
               "spring*.java"
