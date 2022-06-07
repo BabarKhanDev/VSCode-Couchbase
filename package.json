@@ -37,6 +37,17 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "languages": [
+      {
+          "id": "spring-data",
+          "aliases": [
+              "Spring Boot Properties Yaml"
+          ],
+          "filenamePatterns": [
+              "spring*.java"
+          ]
+      }
+    ],
     "snippets": [
       {"language": "java","path": "./snippets/java/managementapi.json"},
       {"language": "java","path": "./snippets/java/kvops.json"},
