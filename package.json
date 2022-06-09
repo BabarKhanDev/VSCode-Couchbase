@@ -89,14 +89,14 @@
       {"language": "csharp","path": "./snippets/dotnet/fts.json"},
       {"language": "csharp","path": "./snippets/dotnet/bootstrapping.json"},
       {"language": "csharp","path": "./snippets/dotnet/transactions.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/managementapi.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/kvops.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/subdocops.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/query.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/analytics.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/fts.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/bootstrapping.json"},
-      {"language": "spring-data","path": "./snippets/spring-data/transactions.json"}
+      {"language": "java","path": "./snippets/spring-data/managementapi.json"},
+      {"language": "java","path": "./snippets/spring-data/kvops.json"},
+      {"language": "java","path": "./snippets/spring-data/subdocops.json"},
+      {"language": "java","path": "./snippets/spring-data/query.json"},
+      {"language": "java","path": "./snippets/spring-data/analytics.json"},
+      {"language": "java","path": "./snippets/spring-data/fts.json"},
+      {"language": "java","path": "./snippets/spring-data/bootstrapping.json"},
+      {"language": "java","path": "./snippets/spring-data/transactions.json"}
     ],
     "customEditors": [
       {

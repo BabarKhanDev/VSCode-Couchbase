@@ -1,31 +1,31 @@
 {
     "Transaction Example": {
-        "prefix": ["@cbtranex"],
+        "prefix": ["@cbsdtranex"],
         "body": [],
         "description": "Example code that shows connecting to a cluster and running a transaction on it."
     },
     "Insert Transaction": {
-        "prefix": ["@cbtranins"],
+        "prefix": ["@cbsdtranins"],
         "body": [],
         "description": "Perform an insertion transaction"
     },
     "Get Transaction": {
-        "prefix": ["@cbtranget"],
+        "prefix": ["@cbsdtranget"],
         "body": [],
         "description": "Perform a get transaction"
     },
     "Replace Transaction": {
-        "prefix": ["@cbtranrep"],
+        "prefix": ["@cbsdtranrep"],
         "body": [],
         "description": "Perform a replace transaction"
     },
     "Remove Transaction": {
-        "prefix": ["@cbtranrem"],
+        "prefix": ["@cbsdtranrem"],
         "body": [],
         "description": "Perform a remove transaction"
     },
     "Transaction Import": {
-        "prefix": ["@cbtranimp"],
+        "prefix": ["@cbsdtranimp"],
         "body": [],
         "description": "Import all necessary transaction namespaces."
     }

@@ -1,46 +1,46 @@
 {
     "Sub Doc Get": {
-        "prefix": ["@cbsubget"],
+        "prefix": ["@cbsdsubget"],
         "body": [],
         "description": "Get or check the existence of a sub document value by providing document key and path."
     },
     "Sub Doc Upsert": {
-        "prefix": ["@cbsubups"],
+        "prefix": ["@cbsdsubups"],
         "body": [],
         "description": "Modify the value of an existing path or create it if it does not exist."
     },
     "Sub Doc Insert": {
-        "prefix": ["@cbsubins"],
+        "prefix": ["@cbsdsubins"],
         "body": [],
         "description": "Add a new value to a path that does not exist."
     },
     "Sub Doc Remove": {
-        "prefix": ["@cbsubrem"],
+        "prefix": ["@cbsdsubrem"],
         "body": [],
         "description": "Remove the value of an existing path."
     },
     "Array Operations": {
-        "prefix": ["@cbsubarrops"],
+        "prefix": ["@cbsdsubarrops"],
         "body": [],
         "description": "Example code showing different array operations."
     },
     "Array Append": {
-        "prefix": ["@cbsubarrapp"],
+        "prefix": ["@cbsdsubarrapp"],
         "body": [],
         "description": "Append a value to an existing array in a document."
     },
     "Array Prepend": {
-        "prefix": ["@cbsubarrpre"],
+        "prefix": ["@cbsdsubarrpre"],
         "body": [],
         "description": "Prepend a value to an existing array in a document."
     },
     "Array Add Unique": {
-        "prefix": ["@cbsubarradd"],
+        "prefix": ["@cbsdsubarradd"],
         "body": [],
         "description": "Treat an existing array like a unique set and add a value."
     },
     "Array Insert At": {
-        "prefix": ["@cbsubarrins"],
+        "prefix": ["@cbsdsubarrins"],
         "body": [],
         "description": "Insert a new element into an array at a specific position."
     }
