@@ -1,7 +1,7 @@
 {
     "Upsert Document": {
         "prefix": ["@cbsdups"],
-        "body": [],
+        "body": ["${1:repository}.save(${2:document});"],
         "description": "Upsert a document to a collection."
     },
     "Insert Document": {
@@ -16,12 +16,12 @@
     },
     "Get Document": {
         "prefix": ["@cbsdget"],
-        "body": [],
+        "body": ["${1:repository}.findById(\"${2:documentId}\");"],
         "description": "Use a key to get a document from a collection."
     },
     "Remove Document": {
         "prefix": ["@cbsdrem"],
-        "body": [],
+        "body": ["${1:repository}.deleteById(\"${2:documentId}\");"],
         "description": "Use a key to remove a document from a collection."
     },
     "KV Import": {
