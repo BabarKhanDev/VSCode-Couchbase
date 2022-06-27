@@ -1,27 +1,27 @@
 {
     "Upsert Document": {
         "prefix": ["@cbsdups"],
-        "body": ["@Autowired","private CouchbaseTemplate template;","","template.upsertById(${1:document});"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.upsertById(${1:model}.class).inScope(\"${2:scopeName}\").inCollection(\"${3:collectionName}\").one(${4:document});"],
         "description": "Upsert a document to a collection."
     },
     "Insert Document": {
         "prefix": ["@cbsdins"],
-        "body": ["@Autowired","private CouchbaseTemplate template;","","template.insertById(${1:document});"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.insertById(${1:model}.class).inScope(\"${2:scopeName}\").inCollection(\"${3:collectionName}\").one(${4:document});"],
         "description": "Insert a document into a collection."
     },
     "Replace Document": {
         "prefix": ["@cbsdrep"],
-        "body": ["@Autowired","private CouchbaseTemplate template;","template.replaceById(${1:document});"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.replaceById(${1:model}.class).inScope(\"${2:scopeName}\").inCollection(\"${3:collectionName}\").one(${4:document});"],
         "description": "Replace a document in a collection."
     },
     "Get Document": {
         "prefix": ["@cbsdget"],
-        "body": ["@Autowired","private CouchbaseTemplate template;","","template.findById(${1:key}, ${2:model.class});"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.findById(${1:model}.class).inScope(\"${2:scopeName}\").inCollection(\"${3:collectionName}\").one(${4:documentId});"],
         "description": "Use a key to get a document from a collection."
     },
     "Remove Document": {
         "prefix": ["@cbsdrem"],
-        "body": ["@Autowired","private CouchbaseTemplate template;","","template.removeById(${1:documentId});"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.removeById(${1:model}.class).inScope(\"${2:scopeName}\").inCollection(\"${3:collectionName}\").one(${4:documentId});"],
         "description": "Use a key to remove a document from a collection."
     },
     "KV Import": {
@@ -36,7 +36,7 @@
     },
     "JSON Transcoder": {
         "prefix": ["@cbsdtranscoder"],
-        "body": [],
+        "body": ["CouchbaseCacheConfiguration.valueTranscoder()"],
         "description": "Example code that shows how to use a RawJSONTranscoder on an upsert operation."
     },
     "Document Expiration": {
