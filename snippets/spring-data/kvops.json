@@ -1,27 +1,27 @@
 {
     "Upsert Document": {
         "prefix": ["@cbsdups"],
-        "body": ["${1:repository}.save(${2:document});"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.upsertById(${1:document});"],
         "description": "Upsert a document to a collection."
     },
     "Insert Document": {
         "prefix": ["@cbsdins"],
-        "body": [],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.insertById(${1:document});"],
         "description": "Insert a document into a collection."
     },
     "Replace Document": {
         "prefix": ["@cbsdrep"],
-        "body": [],
+        "body": ["@Autowired","private CouchbaseTemplate template;","template.replaceById(${1:document});"],
         "description": "Replace a document in a collection."
     },
     "Get Document": {
         "prefix": ["@cbsdget"],
-        "body": ["${1:repository}.findById(\"${2:documentId}\");"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.findById(${1:key}, ${2:model.class});"],
         "description": "Use a key to get a document from a collection."
     },
     "Remove Document": {
         "prefix": ["@cbsdrem"],
-        "body": ["${1:repository}.deleteById(\"${2:documentId}\");"],
+        "body": ["@Autowired","private CouchbaseTemplate template;","","template.removeById(${1:documentId});"],
         "description": "Use a key to remove a document from a collection."
     },
     "KV Import": {
