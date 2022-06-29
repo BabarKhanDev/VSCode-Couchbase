@@ -26,7 +26,7 @@
     },
     "SQL++ Query Example": {
         "prefix": ["@cbsdqex"],
-        "body": [],
+        "body": ["package ${1:package name};","","import org.springframework.beans.factory.annotation.Autowired;","import org.springframework.data.couchbase.core.CouchbaseTemplate;","import org.springframework.data.couchbase.core.query.N1QLExpression;","import org.springframework.data.couchbase.core.query.N1QLQuery;","","import com.couchbase.client.java.query.QueryOptions;","import com.couchbase.client.java.query.QueryScanConsistency;","","public class queryExample {","","    @Autowired","    private static CouchbaseTemplate template;","    ","    public static void main(String[] args) {","    ","        N1QLExpression expression = N1QLExpression.x(\"${2:SQL++ Query}\");","","        N1QLQuery query = buildQuery(expression, QueryScanConsistency.REQUEST_PLUS);","        template.findByQuery(${3:Model}.class).matching(query);","        ","    }","","    public static N1QLQuery buildQuery(N1QLExpression expression, QueryScanConsistency scanConsistency) {","        QueryOptions opts = QueryOptions.queryOptions().scanConsistency(scanConsistency);","    ","        return new N1QLQuery(expression, opts);","    }","    ","}"],
         "description": "Example code that shows connecting to a cluster and running a query on it."
     }
 }
