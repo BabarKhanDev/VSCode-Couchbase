@@ -1,12 +1,12 @@
 {
     "Create Analytics Query": {
         "prefix": ["@cbsdanq"],
-        "body": [],
+        "body": ["AnalyticsQuery query = new AnalyticsQuery();","${1:CouchbaseTemplate}.findByAnalytics(${2:Model}.class).matching(query);"],
         "description": "Use SQL++ to Query the Analytics Service on the Couchbase Cluster."
     },
     "Analytics Query With Parameters": {
         "prefix": ["@cbsdanparamq"],
-        "body": [],
+        "body": ["AnalyticsOptions opts = AnalyticsOptions.analyticsOptions().parameters(${1:parameters});","AnalyticsQuery query = new AnalyticsQuery();","${2:CouchbaseTemplate}.findByAnalytics(${3:Model}.class).withOptions(opts).matching(query);"],
         "description": "Use SQL++ to Query the Analytics Service on the Couchbase Cluster, this uses parameters."
     },
     "Analytics Query Example": {
